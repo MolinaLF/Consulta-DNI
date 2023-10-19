@@ -1,0 +1,99 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Estilos para el formulario */
+.form-control {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1.2rem;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 7px 30px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Estilos para la tarjeta de información */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+.label {
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+/* Estilo para la imagen de perfil */
+.perfil {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid #007bff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.perfil:hover {
+    transform: scale(1.1);
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .form-control {
+        margin-bottom: 10px;
+    }
+    .container {
+        padding: 10px;
+    }
+    .card {
+        padding: 15px;
+    }
+    .label {
+        margin-top: 5px;
+    }
+    .perfil {
+        max-width: 80%;
+    }
+}
